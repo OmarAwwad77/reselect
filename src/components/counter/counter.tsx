@@ -16,7 +16,7 @@ type Props = OwnProps & LinkStateToProps & LinkDispatchToProps;
 
 const Counter: React.FC<Props> = ({ counter, increment }) => {
 	useEffect(() => {
-		// setInterval(increment, 1000);
+		setInterval(increment, 1000);
 	}, []);
 
 	return (
